@@ -8,6 +8,7 @@
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
@@ -15,11 +16,11 @@
     <div id="header-container">
       <div id="container-mask">
         <nav>
-          <ul>
-            <li><a href="#">HOME</a><span class="dot-divider">·</span></li>
-            <li><a href="#my-story">MY STORY</a><span class="dot-divider">·</span></li>
-            <li><a href="#my-work">WORK</a><span class="dot-divider">·</span></li>
-            <li><a href="#contact">CONTACT</a></li>
+          <ul id="banner-links">
+            <li><a href="#" >HOME</a><span class="dot-divider">·</span></li>
+            <li><a class="my-story">MY STORY</a><span class="dot-divider">·</span></li>
+            <li><a class="my-work">WORK</a><span class="dot-divider">·</span></li>
+            <li><a class="contact">CONTACT</a></li>
           </ul>
         </nav>
         <div id="introduction">
@@ -28,7 +29,7 @@
           <h5>Full Stack Web Developer. Product Manager. Startup Guy.</h5>
         </div>
         <div id="arrow-centering">
-          <a href="#my-story"><div class="arrow-down animated bounce"></div></a>
+            <a class="my-story"><div class="arrow-down animated bounce"></div></a>
         </div>
       </div>
     </div>
@@ -110,5 +111,18 @@
       </div>
     </div>
   </div>
+  <script>
+    function animate_scroll(e) {
+      e.preventDefault();
+        var link_class = $(this).attr('class');
+        var div_pos = $('#'+link_class+'').offset().top;
+        $('body, html').animate({scrollTop: div_pos}, 500);
+        return false;
+    }
+    $(function(){
+    $('#banner-links a').on('click', animate_scroll);
+    $('#arrow-centering a').on('click', animate_scroll);
+    });
+  </script>
 
 </body>
