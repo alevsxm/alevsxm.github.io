@@ -76,7 +76,7 @@ hr {
 .arrow-centering{
   position: absolute;
   bottom: 2%;
-  left: 48.5%;
+  left: 48.1%;
 }
 
 .arrow-down {
@@ -237,5 +237,41 @@ img:hover {
 }
 
 i:hover {
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 959px) {
+
+  #work-items{
+    text-align: center;
+  }
+
+  .container .columns  {
+    float: none;
+  }
+
+  h5 {
+    padding-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .fa {
+    padding: 3px;
+  }
+
+  .container {
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  #my-story {
+    padding: 70px 15%;
+  }
 
 }
