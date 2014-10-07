@@ -25,13 +25,14 @@ a {
   background-image: url("../assets/bk_manhattan_bridge.jpg");
   background-size: cover;
   height: 100vh;
+  min-height: 450px;
 }
 
 #container-mask {
   background-color: rgba(0, 0, 0, 0.3);
   position: relative;
   height: 100vh;
-  min-height: 650px;
+  min-height: 450px;
 }
 
 nav {
@@ -124,6 +125,11 @@ hr {
     60% {transform: translateY(-15px);}
 }
 
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+}
+
 .social-animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -143,18 +149,12 @@ hr {
     30% {transform: translateY(-8px);}
 }
 
-.bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-}
-
 .social-bounce {
     -webkit-animation-name: social-bounce;
     animation-name: social-bounce;
 }
 
 #my-story-container {
-  height: 100%;
   width: 100%;
   background-color: #29293D;
   display: inline-block;
@@ -166,9 +166,8 @@ hr {
 #my-story {
   margin-left: auto;
   margin-right: auto;
-  width: 45%;
   text-align: center;
-  padding-top: 8%;
+  padding: 8% 23%;
 }
 
 #my-work-container {
@@ -236,5 +235,5 @@ img:hover {
 }
 
 i:hover {
-  
+
 }
