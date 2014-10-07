@@ -29,7 +29,7 @@ a {
 }
 
 #container-mask {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   position: relative;
   height: 100vh;
   min-height: 450px;
@@ -161,17 +161,19 @@ hr {
   margin: 0;
   padding: 0;
   position: relative;
+  min-height: 450px;
 }
 
 #my-story {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding: 8% 23%;
+  padding: 8% 25%;
+  min-height: 450px;
 }
 
 #my-work-container {
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
   background-color: #2C2C2F;
   display: inline-block;
@@ -185,7 +187,7 @@ hr {
   margin-right: auto;
   width: 100%;
   text-align: center;
-  padding-top: 13%;
+  padding: 13% 0;
   line-height: 1.2;
 }
 
